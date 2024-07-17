@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-""" Module returns list of schools based on topic """
+"""Where can I learn Python? Module """
+
 
 def schools_by_topic(mongo_collection, topic):
-    """ Return list of school having a specific topic """
-    school_lst = list(mongo_collection.find({ "topics": topic }))
-    return school_lst
+    """returns the list of school having a specific topic """
+    return mongo_collection.find({"topics": topic})

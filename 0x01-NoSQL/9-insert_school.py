@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-""" Module inserts a document """
-from bson.objectid import ObjectId
+""" Insert a document in Python module"""
 
 
-def insert_school(mongo_collection, **kwargs) -> ObjectId:
-    """ Inserts a new document in a collection based on kwargs """
-    inserted_doc = mongo_collection.insert_one(kwargs)
-    return inserted_doc.inserted_id
+def insert_school(mongo_collection, **kwargs):
+    """ Python function that inserts a new document in a collection """
+    result = mongo_collection.insert_one(kwargs)
+    return result.inserted_id

@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
-""" Module lists all documents in a collection """
-from typing import List
+""" List all documents in Python module """
 
 
-def list_all(mongo_collection) -> List[dict]:
-    """ Return empty list if no document in the collection  """
-    return list(mongo_collection.find())
+def list_all(mongo_collection):
+    """ Python function that lists all documents in a collection """
+    return mongo_collection.find()
